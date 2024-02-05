@@ -1,0 +1,186 @@
+body {
+    background: rgb(100, 150, 180);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainField {
+    margin: 40px auto 20px;
+    min-width: 320px;
+    min-height: 320px;
+    width: 30vw;
+    height: 30vw;
+    display: grid;
+    grid-template-columns: 33.333333% 33.333333% 33.333333%;
+    grid-template-rows: 33.333333% 33.333333% 33.333333%;
+}
+
+.oneField {
+    background: rgba(149, 198, 255, 0);
+    border: 4px solid rgb(24, 45, 235);
+}
+
+.oneField:first-child {
+    border-left: none;
+}
+
+.oneField:nth-child(1),
+.oneField:nth-child(2),
+.oneField:nth-child(3) {
+    border-top: none;
+}
+
+.oneField:nth-child(7),
+.oneField:nth-child(8),
+.oneField:nth-child(9) {
+    border-bottom: none;
+}
+
+.oneField:nth-child(3n) {
+    border-right: none;
+}
+
+.oneField:nth-child(3n+1) {
+    border-left: none;
+}
+
+.enableRes:hover {
+    box-shadow: 1px 3px 2px rgb(22, 1, 117);
+}
+
+.enableRes:active {
+    box-shadow: 0 0 0#000;
+}
+
+.buttons {
+    width: 30vw;
+    min-width: 320px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.but {
+    width: 9vw;
+    min-width: 120px;
+    height: 56px;
+    font-size: 20px;
+    color: #fff;
+    background: rgb(75, 62, 255);
+    border: 3px solid rgb(53, 15, 158);
+    box-shadow: 1px 3px 6px rgb(22, 1, 117);
+    border-radius: 4px;
+}
+
+.but:hover {
+    background: rgb(63, 53, 201);
+}
+
+.but:active {
+    box-shadow: 0 0 0#000;
+}
+
+.vers {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    color: rgb(155, 155, 155);
+}
+
+.author {
+    position: fixed;
+    bottom: 0;
+    left: 6px;
+    width: 100px;
+}
+
+.onlyHref {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    text-decoration: none;
+    cursor: default;
+}
+
+.blockbut {
+    width: 9vw;
+    min-width: 120px;
+    height: 56px;
+    font-size: 20px;
+    color: rgb(179, 179, 179);
+    background: rgb(111, 106, 185);
+    border: 3px solid rgb(86, 57, 167);
+    box-shadow: 1px 3px 6px rgb(78, 78, 78);
+    border-radius: 4px;
+}
+
+.butt {
+    margin-top: 20px;
+    min-width: 320px;
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+}
+
+.enableRes {
+    color: #fff;
+    background: rgb(75, 62, 255);
+    border: 3px solid rgb(53, 15, 158);
+    box-shadow: 1px 3px 6px rgb(22, 1, 117);
+}
+
+.disableRes {
+    color: rgb(179, 179, 179);
+    background: rgb(111, 106, 185);
+    border: 3px solid rgb(86, 57, 167);
+    box-shadow: 1px 3px 6px rgb(78, 78, 78);
+}
+
+.round {
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    background-color: transparent;
+}
+
+.zeD {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgb(0, 0, 124);
+}
+
+.zeD::before {
+    content: "";
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    background: rgb(118, 206, 247);
+    border-radius: 50%;
+}
+
+
+.crD {
+    margin: auto;
+    margin-top: 46%;
+    display: flex;
+    width: 90%;
+    height: 8%;
+    background: rgb(151, 0, 0);
+    border-radius: 10px;
+    transform: rotate(0.125turn);
+}
+
+.crD::before {
+    border-radius: 10px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: rotate(-0.25turn);
+    background: rgb(151, 0, 0);
+}
